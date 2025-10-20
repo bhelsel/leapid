@@ -1,0 +1,66 @@
+{
+  /* <div className={styles.plateContainer}>
+          <svg width="300" height="300" viewBox="0 0 300 300">
+            <circle
+              cx="150"
+              cy="150"
+              r="145"
+              fill="#f8fafc"
+              stroke="#111827"
+              strokeWidth="3"
+            />
+            <line
+              x1="150"
+              y1="5"
+              x2="150"
+              y2="295"
+              stroke="#c7c7c7"
+              strokeWidth="2"
+            />
+            <line
+              x1="5"
+              y1="150"
+              x2="295"
+              y2="150"
+              stroke="#c7c7c7"
+              strokeWidth="2"
+            />
+            <text
+              x="75"
+              y="100"
+              textAnchor="middle"
+              fill="#6b7280"
+              fontSize="14"
+            >
+              Vegetables
+            </text>
+            <text
+              x="225"
+              y="100"
+              textAnchor="middle"
+              fill="#6b7280"
+              fontSize="14"
+            >
+              Grains
+            </text>
+            <text
+              x="75"
+              y="220"
+              textAnchor="middle"
+              fill="#6b7280"
+              fontSize="14"
+            >
+              Proteins
+            </text>
+            <text
+              x="225"
+              y="220"
+              textAnchor="middle"
+              fill="#6b7280"
+              fontSize="14"
+            >
+              Fruits
+            </text>
+          </svg>
+        </div> */
+}
