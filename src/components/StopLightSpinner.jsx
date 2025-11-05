@@ -1,5 +1,7 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import styles from "./StoplightSpinner.module.css";
+import foods from "../data/foods.json";
+import sections from "../data/stopLightSections.json";
 
 export default function StoplightSpinner() {
   const [rotation, setRotation] = useState(0);
@@ -7,59 +9,10 @@ export default function StoplightSpinner() {
   const [result, setResult] = useState(null); // 'green' | 'yellow' | 'red'
   const [description, setDescription] = useState(null); // 'green' | 'yellow' | 'red'
   const [selectedFood, setSelectedFood] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedTip, setSelectedTip] = useState(null);
+  const [displayedFoods, setDisplayedFoods] = useState([]); // Random selection of up to 5 foods
   const wheelRef = useRef(null);
-
-  const foods = {
-    green: ["Apple", "Salad", "Broccoli", "Green Beans"],
-    yellow: ["Rice", "Banana", "Corn", "Pasta"],
-    red: ["Spin Again"],
-  };
-
-  // Define explicit wheel sections: 2 greens, 3 yellows, 1 small red (~45deg)
-  const sections = [
-    {
-      key: "green",
-      type: "veggie",
-      description: "Choose a Green Stop Light Veggie",
-      color: "#22C55E",
-      angle: 63,
-    },
-    {
-      key: "yellow",
-      type: "veggie",
-      description: "Choose a Yellow Stop Light Veggie",
-      color: "#FCD34D",
-      angle: 63,
-    },
-    {
-      key: "green",
-      type: "fruit",
-      description: "Choose a Green Stop Light Fruit",
-      color: "#22C55E",
-      angle: 63,
-    },
-    {
-      key: "yellow",
-      type: "protein",
-      description: "Choose a Yellow Stop Light Protein",
-      color: "#FCD34D",
-      angle: 63,
-    },
-    {
-      key: "red",
-      type: "",
-      description: "Spin Again",
-      color: "#DC2626",
-      angle: 45,
-    },
-    {
-      key: "yellow",
-      type: "grain",
-      description: "Choose a Yellow Stop Light Grain",
-      color: "#FCD34D",
-      angle: 63,
-    },
-  ];
 
   // Build cumulative ranges (degrees) for picking
   // These should match the actual wheel positions (starting at -90°)
@@ -82,11 +35,23 @@ export default function StoplightSpinner() {
       acc = end;
     }
   })();
+
+  // Helper function to randomly select up to 5 foods from a category
+  const getRandomFoods = (category) => {
+    const allFoods = foods[category];
+    const maxToShow = Math.min(5, allFoods.length);
+
+    // Shuffle and take first maxToShow items
+    const shuffled = [...allFoods].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, maxToShow);
+  };
+
   const spinWheel = () => {
     if (isSpinning) return;
     setIsSpinning(true);
     setSelectedFood(null);
     setResult(null);
+    setDisplayedFoods([]);
 
     // Pick a random degree (0-360)
     const r = Math.random() * 360;
@@ -137,6 +102,8 @@ export default function StoplightSpinner() {
       setIsSpinning(false);
       setResult(pickedSection.key);
       setDescription(pickedSection.description);
+      // Select random foods from the category
+      setDisplayedFoods(getRandomFoods(pickedSection.foodCategory));
     }, duration);
   };
 
@@ -244,27 +211,34 @@ export default function StoplightSpinner() {
             <div className={styles.foodList}>
               <p className={styles.chooseText}>{description}</p>
               <div className={styles.foodButtons}>
-                {foods[result].map((food) => (
+                {displayedFoods.map((food) => (
                   <button
-                    key={food}
+                    key={food.name}
                     className={styles.foodButton}
-                    onClick={() => setSelectedFood(food)}
+                    onClick={() => {
+                      setSelectedFood(food.name);
+                      setSelectedImage(food.image);
+                      setSelectedTip(food.tip);
+                    }}
                   >
-                    {food}
+                    {food.name}
                   </button>
                 ))}
               </div>
             </div>
           ) : (
             <div className={styles.spinAgain}>
-              <p>Hit spin again to try for a food.</p>
+              <p>
+                No food this time.
+                <br />
+                Spin again for another try!
+              </p>
             </div>
           )}
           {selectedFood && (
             <div className={styles.selection}>
-              <p>
-                You selected <strong>{selectedFood}</strong> — great choice!
-              </p>
+              <p>{selectedTip}</p>
+              <img src={selectedImage} width="100%" />
             </div>
           )}
         </div>

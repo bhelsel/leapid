@@ -1,0 +1,224 @@
+{
+  "greenVeggie": [
+    {
+      "name": "Swiss chard",
+      "image": "/leapid/foods/swisschard.jpeg",
+      "tip": "Swiss chard helps keep your heart strong. Try it cooked like spinach."
+    },
+    {
+      "name": "Broccoli",
+      "image": "/leapid/foods/broccoli.jpeg",
+      "tip": "Broccoli gives you vitamin C. It tastes great steamed or roasted."
+    },
+    {
+      "name": "Kale",
+      "image": "/leapid/foods/kale.jpeg",
+      "tip": "Kale has lots of vitamins that help your body stay healthy. Try it in a smoothie or salad."
+    },
+    {
+      "name": "Spinach",
+      "image": "/leapid/foods/spinach.jpeg",
+      "tip": "Spinach gives you iron to make you strong. Eat it raw or cooked."
+    },
+    {
+      "name": "Asparagus",
+      "image": "/leapid/foods/asparagus.jpeg",
+      "tip": "Asparagus is full of vitamins and tastes yummy roasted or grilled."
+    },
+    {
+      "name": "Carrots",
+      "image": "/leapid/foods/carrots.jpeg",
+      "tip": "Carrots help your eyes stay healthy. Eat them raw or cooked."
+    },
+    {
+      "name": "Beets",
+      "image": "/leapid/foods/beets.jpeg",
+      "tip": "Beets help your blood stay healthy. Try them roasted or in a salad."
+    },
+    {
+      "name": "Cucumbers",
+      "image": "/leapid/foods/cucumbers.jpeg",
+      "tip": "Cucumbers help you stay cool and hydrated. Eat them raw for a crunch!"
+    },
+    {
+      "name": "Peas",
+      "image": "/leapid/foods/peas.jpeg",
+      "tip": "Peas give you protein and fiber. Add them to soups or rice."
+    },
+    {
+      "name": "Onions",
+      "image": "/leapid/foods/onions.jpeg",
+      "tip": "Onions add flavor to food. Cook them until soft for a sweeter taste."
+    },
+    {
+      "name": "Green & yellow beans",
+      "image": "/leapid/foods/greenbeans.jpeg",
+      "tip": "Green and yellow beans help your muscles and bones. Eat them steamed or stir-fried."
+    },
+    {
+      "name": "Tomatoes",
+      "image": "/leapid/foods/tomatoes.jpeg",
+      "tip": "Tomatoes are full of vitamin C. Try them fresh or in pasta sauce."
+    },
+    {
+      "name": "Peppers",
+      "image": "/leapid/foods/peppers.jpeg",
+      "tip": "Peppers add color and crunch. Eat them raw or roasted for extra flavor."
+    }
+  ],
+  "yellowVeggie": [
+    {
+      "name": "Corn",
+      "image": "/leapid/foods/corn.jpeg",
+      "tip": "Corn gives you energy. Enjoy it boiled or grilled on the cob."
+    },
+    {
+      "name": "Potatoes",
+      "image": "/leapid/foods/potatoes.jpeg",
+      "tip": "Potatoes give you energy. Bake or roast them instead of frying."
+    }
+  ],
+  "greenFruit": [
+    {
+      "name": "Strawberries",
+      "image": "/leapid/foods/strawberries.jpeg",
+      "tip": "Strawberries have vitamin C and taste sweet. Eat them fresh or in yogurt."
+    },
+    {
+      "name": "Raspberries",
+      "image": "/leapid/foods/raspberries.jpeg",
+      "tip": "Raspberries are full of fiber. Eat them for a healthy snack."
+    },
+    {
+      "name": "Blueberries",
+      "image": "/leapid/foods/blueberries.jpeg",
+      "tip": "Blueberries help your brain stay sharp. Eat them with oatmeal or cereal."
+    },
+    {
+      "name": "Apples",
+      "image": "/leapid/foods/apples.jpeg",
+      "tip": "Apples are crunchy and full of fiber. Eat them with the skin on."
+    },
+    {
+      "name": "Cherries",
+      "image": "/leapid/foods/cherries.jpeg",
+      "tip": "Cherries taste sweet and can help your body feel less sore after exercise."
+    },
+    {
+      "name": "Lemons",
+      "image": "/leapid/foods/lemons.jpeg",
+      "tip": "Lemons are full of vitamin C. Squeeze some in your water for flavor."
+    },
+    {
+      "name": "Oranges",
+      "image": "/leapid/foods/oranges.jpeg",
+      "tip": "Oranges help your immune system. Peel and eat for a juicy snack."
+    },
+    {
+      "name": "Pears",
+      "image": "/leapid/foods/pears.jpeg",
+      "tip": "Pears are soft and sweet. They help you stay regular because of fiber."
+    },
+    {
+      "name": "Peaches",
+      "image": "/leapid/foods/peaches.jpeg",
+      "tip": "Peaches are juicy and full of vitamins. Eat them fresh or from a can in juice."
+    },
+    {
+      "name": "Watermelon",
+      "image": "/leapid/foods/watermelon.jpeg",
+      "tip": "Watermelon keeps you cool and hydrated. Eat it cold on a hot day."
+    }
+  ],
+  "yellowProtein": [
+    {
+      "name": "Eggs",
+      "image": "/leapid/foods/eggs.jpeg",
+      "tip": "Eggs help build muscles. Eat them scrambled, boiled, or in an omelet."
+    },
+    {
+      "name": "Low-fat cheese",
+      "image": "/leapid/foods/cheese.jpeg",
+      "tip": "Low-fat cheese gives you calcium for strong bones. Enjoy a small slice for a snack."
+    },
+    {
+      "name": "Chickpeas",
+      "image": "/leapid/foods/chickpeas.jpeg",
+      "tip": "Chickpeas give you energy and protein. Try them in a salad or roasted."
+    },
+    {
+      "name": "Kidney beans",
+      "image": "/leapid/foods/kidneybeans.jpeg",
+      "tip": "Kidney beans help your heart stay healthy. Eat them in chili or soup."
+    },
+    {
+      "name": "Black beans",
+      "image": "/leapid/foods/blackbeans.jpeg",
+      "tip": "Black beans have protein and fiber. Mix them with rice or veggies."
+    },
+    {
+      "name": "Navy beans",
+      "image": "/leapid/foods/navybeans.jpeg",
+      "tip": "Navy beans give you energy and help your stomach feel full."
+    },
+    {
+      "name": "Lentils",
+      "image": "/leapid/foods/lentils.jpeg",
+      "tip": "Lentils cook fast and are full of protein. Try them in soup or stew."
+    },
+    {
+      "name": "Pinto beans",
+      "image": "/leapid/foods/pintobeans.jpeg",
+      "tip": "Pinto beans taste great in tacos or burritos. They give you energy too."
+    },
+    {
+      "name": "Fish",
+      "image": "/leapid/foods/fish.jpeg",
+      "tip": "Fish helps your brain and heart. Try it baked or grilled."
+    },
+    {
+      "name": "Crab",
+      "image": "/leapid/foods/crab.jpeg",
+      "tip": "Crab has protein to keep you strong. Eat it with lemon for extra flavor."
+    },
+    {
+      "name": "Chicken",
+      "image": "/leapid/foods/chicken.jpeg",
+      "tip": "Chicken helps your muscles grow. Bake or grill it for a healthy meal."
+    }
+  ],
+  "yellowGrain": [
+    {
+      "name": "Whole wheat bread",
+      "image": "/leapid/foods/wholewheatbread.jpeg",
+      "tip": "Whole wheat bread gives you long-lasting energy. Use it for sandwiches."
+    },
+    {
+      "name": "Whole wheat bun",
+      "image": "/leapid/foods/wholewheatbuns.jpeg",
+      "tip": "Whole wheat buns are better than white buns. Try them for burgers or sandwiches."
+    },
+    {
+      "name": "Whole grain cracker",
+      "image": "/leapid/foods/wholegraincracker.jpeg",
+      "tip": "Whole grain crackers are a good snack. Eat them with cheese or peanut butter."
+    },
+    {
+      "name": "Unsweetened oatmeal",
+      "image": "/leapid/foods/oatmeal.jpeg",
+      "tip": "Oatmeal keeps you full and gives energy. Add fruit for extra flavor."
+    },
+    {
+      "name": "Hard taco shell",
+      "image": "/leapid/foods/tacoshell.jpeg",
+      "tip": "Hard taco shells can be filled with beans, chicken, or veggies for a fun meal."
+    }
+  ],
+  "red": [
+    {
+      "name": "Spin Again",
+      "image": "",
+      "tip": ""
+    }
+  ]
+}

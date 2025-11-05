@@ -1,0 +1,50 @@
+[
+  {
+    "key": "green",
+    "type": "veggie",
+    "description": "Choose a Green Stop Light Veggie",
+    "color": "#22C55E",
+    "angle": 63,
+    "foodCategory": "greenVeggie"
+  },
+  {
+    "key": "yellow",
+    "type": "veggie",
+    "description": "Choose a Yellow Stop Light Veggie",
+    "color": "#FCD34D",
+    "angle": 63,
+    "foodCategory": "yellowVeggie"
+  },
+  {
+    "key": "green",
+    "type": "fruit",
+    "description": "Choose a Green Stop Light Fruit",
+    "color": "#22C55E",
+    "angle": 63,
+    "foodCategory": "greenFruit"
+  },
+  {
+    "key": "yellow",
+    "type": "protein",
+    "description": "Choose a Yellow Stop Light Protein",
+    "color": "#FCD34D",
+    "angle": 63,
+    "foodCategory": "yellowProtein"
+  },
+  {
+    "key": "red",
+    "type": "",
+    "description": "Spin Again",
+    "color": "#DC2626",
+    "angle": 45,
+    "foodCategory": "red"
+  },
+  {
+    "key": "yellow",
+    "type": "grain",
+    "description": "Choose a Yellow Stop Light Grain",
+    "color": "#FCD34D",
+    "angle": 63,
+    "foodCategory": "yellowGrain"
+  }
+]
